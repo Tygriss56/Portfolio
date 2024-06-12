@@ -1,0 +1,250 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    position: static;
+    top: 0;
+    z-index: 1000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color:grey ;
+
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: grey;
+}
+
+/* Styles pour le bouton à bascule */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+footer.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+/* Styles pour le mode clair */
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header.light-mode {
+    background: #666;
+    color: gray;
+}
+
+footer.light-mode {
+    background: #666;
+    color: gray;
+}
+
+/* Styles pour le bouton à bascule */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Styles pour les icônes (lune et soleil) */
+.icon {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s;
+}
+
+/* Styles spécifiques pour la lune */
+.icon.moon {
+    left: 5px;
+    opacity: 1; /* La lune est visible par défaut */
+}
+
+/* Styles spécifiques pour le soleil */
+.icon.sun {
+    right: 7px;
+    opacity: 0; /* Le soleil est invisible par défaut */
+    color: yellow;
+}
+
+input:checked + .slider .moon {
+    opacity: 0; /* La lune est invisible lorsque le mode sombre est activé */
+}
+
+input:checked + .slider .sun {
+    opacity: 1; /* Le soleil est visible lorsque le mode sombre est activé */
+}
+
+/* Section de présentation */
+#presentation {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.presentation-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.presentation-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.presentation-text {
+    flex: 1;
+}
+
+.presentation-text h2 {
+    margin-bottom: 10px;
+}
+
+.presentation-text p {
+    margin-top: 0;
+}
+
+/* Effet de zoom sur la photo au survol */
+.presentation-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Mode sombre pour la section de présentation */
+body.dark-mode #presentation {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode #presentation .presentation-text h2,
+body.dark-mode #presentation .presentation-text p {
+    color: #fff;
+}
