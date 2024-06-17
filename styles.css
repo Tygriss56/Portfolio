@@ -290,15 +290,39 @@ body.dark-mode .etude-item p {
     color: #bbb;
 }
 
-
-
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
+/* Styles pour le bouton de téléchargement de CV */
+.btn-download-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Couleur du bouton */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-download-cv:hover {
+    background-color: #45a049; /* Couleur au survol */
+    transform: translateY(-3px); /* Effet de translation au survol */
+}
+
+.presentation-content {
+    position: relative;
+}
+
+/* Positionnement du bouton de téléchargement */
+.btn-download-cv {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 
 .skill-box {
     width: 1200px; /* Largeur fixe de chaque boîte de compétence */
@@ -328,12 +352,15 @@ body.dark-mode .etude-item p {
     color: #666;
 }
 
+/* Pour les boîtes de compétences */
+.skill-box a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Utilise la couleur du parent */
+}
 
-
-
-
-
-
+.skill-box a:hover {
+    color: inherit; /* Empêche le changement de couleur au survol */
+}
 
 /* Mode clair */
 body.light-mode {
@@ -383,10 +410,8 @@ body.light-mode .etude-item h3 {
     color: #333;
 }
 
-
-
-.etude-item {
-    text-decoration: none; /* Supprime le soulignement */
+body.light-mode .etude-item p {
+    color: #666;
 }
 
 /* Styles spécifiques pour le mode clair */
@@ -408,7 +433,3 @@ body.light-mode .skill-box p {
     color: #666; /* Couleur du texte */
 }
 
-
-body.light-mode .etude-item p {
-    color: #666;
-}
