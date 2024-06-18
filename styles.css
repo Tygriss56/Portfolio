@@ -2,8 +2,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background-color 0.5s, color 0.5s;
-    background-color: #333;
-    color: #333;
+    background-color: #222;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ header {
     z-index: 1000;
     padding: 20px 0;
     transition: background-color 0.3s, color 0.3s;
-    background-color: #545454; /* Couleur vert vif */
+    background-color: #545454;
     color: #fff;
     text-align: center;
 }
@@ -49,14 +49,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #66BB6A; /* Couleur vert clair au survol */
+    color: #66BB6A;
 }
 
 /* Footer */
 footer {
     padding: 20px 0;
     text-align: center;
-    background-color: #545454; 
+    background-color: #545454;
     color: #fff;
 }
 
@@ -93,7 +93,7 @@ footer {
 }
 
 input:checked + .slider {
-    background-color: #2196F3; /* Couleur bleu */
+    background-color: #2196F3;
 }
 
 input:checked + .slider:before {
@@ -118,7 +118,7 @@ input:checked + .slider:before {
 .icon.sun {
     right: 7px;
     opacity: 0;
-    color: #FFC107; /* Couleur jaune */
+    color: #FFC107;
 }
 
 input:checked + .slider .moon {
@@ -135,7 +135,7 @@ input:checked + .slider .sun {
     height: 170px;
     margin: 0 auto;
     padding: 20px 20px;
-    background-color: #eedddd; /* Couleur gris clair */
+    background-color: #eedddd;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
@@ -145,6 +145,7 @@ input:checked + .slider .sun {
 .presentation:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
+
 .presentation-content {
     display: flex;
     align-items: center;
@@ -301,16 +302,16 @@ body.dark-mode .etude-item p {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur du bouton */
-    color: #fff; /* Couleur du texte */
+    background-color: #4CAF50;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-download-cv:hover {
-    background-color: #45a049; /* Couleur au survol */
-    transform: translateY(-3px); /* Effet de translation au survol */
+    background-color: #45a049;
+    transform: translateY(-3px);
 }
 
 .presentation-content {
@@ -325,20 +326,19 @@ body.dark-mode .etude-item p {
 }
 
 .skill-box {
-    width: 1200px; /* Largeur fixe de chaque boîte de compétence */
+    width: 1200px;
     background-color: #333;
     padding: 20px;
-    margin: 20px 0; /* Marge entre chaque boîte de compétence */
+    margin: 20px 0;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
 }
 
 .skill-box:hover {
-    transform: translateY(-5px); /* Effet de translation vers le haut au survol */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skill-box h3 {
@@ -349,37 +349,38 @@ body.dark-mode .etude-item p {
 .skill-box p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #ffffff;
 }
 
 /* Pour les boîtes de compétences */
 .skill-box a {
-    text-decoration: none; /* Supprime le soulignement */
-    color: inherit; /* Utilise la couleur du parent */
+    text-decoration: none;
+    color: inherit;
 }
 
 .skill-box a:hover {
-    color: inherit; /* Empêche le changement de couleur au survol */
+    color: inherit;
 }
 
 /* Mode clair */
 body.light-mode {
-    background-color: #EEEEEE; /* Couleur gris clair */
+    background-color: #EEEEEE;
     color: #333;
 }
 
 body.light-mode header,
+
 body.light-mode footer {
-    background-color: #4CAF50; /* Couleur bleu vif */
-    color: #fff;    
+    background-color: #4CAF50;
+    color: #fff;
 }
 
 body.light-mode footer {
-    background-color: #4CAF50; /* Couleur verte, assortie au header */
+    background-color: #4CAF50;
 }
 
 body.light-mode #presentation {
-    background-color: #EEEEEE; /* Couleur gris clair */
+    background-color: #FFFFFF;
 }
 
 body.light-mode #presentation .presentation-text h2,
@@ -388,7 +389,7 @@ body.light-mode #presentation .presentation-text p {
 }
 
 body.light-mode #etudes {
-    background-color: #F5F5F5; /* Couleur gris clair */
+    background-color: #F5F5F5;
     color: #333;
 }
 
@@ -402,7 +403,7 @@ body.light-mode .etudes-box {
 }
 
 body.light-mode .etude-item {
-    background-color: #F0F0F0; /* Couleur gris clair */
+    background-color: #F0F0F0;
     color: #333;
 }
 
@@ -416,20 +417,144 @@ body.light-mode .etude-item p {
 
 /* Styles spécifiques pour le mode clair */
 body.light-mode .skill-box {
-    background-color: #eedddd; /* Fond gris clair */
-    color: #333; /* Texte sombre */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    background-color: #eedddd;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .skill-box:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .skill-box h3 {
-    color: #333; /* Couleur du titre */
+    color: #333;
 }
 
 body.light-mode .skill-box p {
-    color: #666; /* Couleur du texte */
+    color: #666;
+}
+main {
+    padding: 20px 0;
+    text-align: center;
 }
 
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Couleur du texte des labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button[type="submit"]:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
+/* Mode clair pour la page de contact */
+body.light-mode main {
+    background-color: #EEEEEE; /* Fond de la section principale en mode clair */
+    color: #333; /* Couleur du texte en mode clair */
+}
+
+body.light-mode form {
+    background-color: #fff; /* Fond du formulaire en mode clair */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère en mode clair */
+}
+
+body.light-mode form label {
+    color: #333; /* Couleur du texte des labels en mode clair */
+}
+
+body.light-mode form input[type="text"],
+body.light-mode form input[type="email"],
+body.light-mode form textarea {
+    border: 1px solid #ccc; /* Bordure des champs en mode clair */
+}
+
+body.light-mode form button[type="submit"] {
+    background-color: #333; /* Couleur de fond du bouton en mode clair */
+    color: #fff; /* Couleur du texte du bouton en mode clair */
+}
+
+body.light-mode form button[type="submit"]:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol en mode clair */
+}
+
+
+.contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}   
+
+
+/* Styles pour le bouton "Visiter ce site" */
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* couleur de fond bleue */
+    color: white; /* texte en blanc */
+    text-decoration: none; /* pas de soulignement par défaut */
+    border-radius: 5px; /* coins arrondis */
+    margin-top: 20px; /* espacement depuis le paragraphe précédent */
+}
+
+.visit-button:hover {
+    background-color: #0056b3; /* couleur de fond plus foncée au survol */
+}
+
+.visit-button:active {
+    background-color: #004d99; /* couleur de fond lors du clic */
+}
+
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004d99;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-button:hover {
+    background-color: #004d99;
+    transform: translateY(-3px);
+}
