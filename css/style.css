@@ -4,7 +4,7 @@ html, body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     color: black;
     background-color: whitesmoke;
     z-index: 12;
@@ -91,7 +91,7 @@ left: 0;
 width: 100%;
 background: rgba(255, 255, 255, 0);
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-z-index: 1000; 
+z-index: 1002; 
 transition: padding 1.5s ease; 
 overflow: hidden;
 box-sizing: border-box;

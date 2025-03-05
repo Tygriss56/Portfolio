@@ -107,20 +107,39 @@ input:hover + .radio-tile{
     box-shadow: 0 0 12px var(--primary_color); 
 }
 
-
-section{
+a >.projet-box{
     width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+    margin: 2%;
+    z-index: 2;
 }
-section:hover{
-    transition: all 0.5s ease-in-out;
+
+main > a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projet-box:hover{
     width: 85%;
-    height: 85%;
 }
-section > img {
-width: 20%;
+
+.pact-sect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pact-sect img {
+    display: block;
+    margin: 0.5%;
+    width: 150px;
+    height: 100px;
 }
