@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets</title>
+    <link rel="icon" type="image/png" href="../images/Logo/grand_logo.png">
     <link rel="stylesheet" href="../css/projets.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <script src="../javascript/scroll.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Suisse+Intl:wght@300;400;500&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -21,12 +23,11 @@
 
     <nav>
         <a href="../html/index.html">
-            <img src="../images/Logo.png" alt="Logo">
+            <img src="../images/Logo/Logo.png" alt="Logo">
         </a>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projets.html">Projets</a></li>
-            <li><a href="">Contact</a></li>
         </ul>
     </nav>
 
@@ -35,16 +36,16 @@
         <div class="container">
             <div class="radio-tile-group">
                 <div class="input-container">
-                    <input id="premiere1" type="checkbox" name="radio">
-                    <label for="premiere1" class="radio-tile">
+                    <input id="premiere" type="checkbox" name="radio">
+                    <label for="premiere" class="radio-tile">
                         <ion-icon name="image"></ion-icon>
                         <span>1ère Année</span>
                     </label>
                 </div>
                 
                 <div class="input-container">
-                    <input id="premiere2" type="checkbox" name="radio">
-                    <label for="premiere2" class="radio-tile">
+                    <input id="deuxieme" type="checkbox" name="radio">
+                    <label for="deuxieme" class="radio-tile">
                         <ion-icon name="images"></ion-icon>
                         <span>2ème Année</span>
                     </label>
@@ -52,22 +53,22 @@
 
             </div>
         </div>
-        <a href="../html/pact.html">
+        <a href="../html/pact.html" id="2eme">
             <div class="projet-box">
                 <div class="pact-sect">
                     <section>
-                        <img src="../images/logo_grand.png">
+                        <img src="../images/images-projets/logo_grand.png">
                     </section>
                 </div>
             </div>
         </a>
 
 
-        <a href="../html/Tabaskho.html">
+        <a href="../html/Tabaskho.html" id="1ere">
             <div class="projet-box">
                     <div class="pact-sect">
                         <section>
-                            <img src="../images/grand_fond-clair.png">
+                            <img src="../images/images-projets/grand_fond-clair.png">
                         </section>
                     </div>
             </div>
@@ -90,6 +91,9 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../javascript/scroll.js"></script>
+    <script src="../javascript/select.js"></script>
+
 </body>
 
 </html> 

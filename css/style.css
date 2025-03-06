@@ -4,8 +4,9 @@ html, body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat', sans-serif; 
     color: black;
+    font-family: 'Suisse Intl', sans-serif;
+    font-size: 15px;
     background-color: whitesmoke;
     z-index: 12;
 }
@@ -16,7 +17,7 @@ html, body {
 ***********************/
 header {
     position: relative; 
-    background-image: url('../images/BackgroundIndex.jpg');
+    background-image: url('../images/images-pages/BackgroundIndex.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,10 +58,10 @@ header > h1.hidden {
 *       FOOTER         *
 ***********************/
 footer{
-    background-color:white;
+    border-top: 3px solid #c3c3c3;
     color: black;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 footer > div > a > .logo-github, 
