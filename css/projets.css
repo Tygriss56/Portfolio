@@ -107,18 +107,26 @@ input:hover + .radio-tile{
     box-shadow: 0 0 12px var(--primary_color); 
 }
 
-a >.projet-box{
+a{
+    text-decoration: none;
+}
+.projet-box{
     width: 80%;
+    height: 150px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: 0.5s ease;
     margin: 2%;
     z-index: 2;
 }
-
+.projet-box > h2{
+    text-decoration: none;
+    color: black;
+}
 main > a{
     width: 100%;
     display: flex;
@@ -146,4 +154,9 @@ main > a{
 
 .cache{
     display: none;
+}
+
+#img-proj > img{
+    width: 150px;
+    height: auto;
 }
